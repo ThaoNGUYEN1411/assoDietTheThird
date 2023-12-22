@@ -217,7 +217,7 @@ header{
 
 }
 header div{
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -259,11 +259,14 @@ margin: 20px;
 
 #detail article div.product-detail .img-product{
 text-align: center;
+padding-top: 30px;
 }
 
 #detail article div.product-detail{
 display: flex;
 flex-wrap: wrap;
+min-height: 350px;
+margin-bottom: 30px;
 }
 
 #detail article div.product-detail div.name-product{
@@ -305,8 +308,8 @@ margin-left: 20px;
 }
 
 ul.list-products li{
-  flex: 0 0 40%;
-  max-width: 40%;
+  flex: 0 0 70%;
+  max-width: 70%;
   padding: 20px;
   border-radius: 5%;
 }
