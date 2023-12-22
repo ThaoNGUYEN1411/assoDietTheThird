@@ -1,0 +1,368 @@
+/* =================== page index ================ */
+/* .nutriscore-vertical {
+  float: right;
+  width:100px;
+  align-items:end;
+} */
+#index h1{
+  text-align: center;
+  margin: 30px 20px 0;
+  font-size: 2rem;
+}
+.nutriscore-vertical li {
+  padding: 5px 10px;
+  background-color: #fff;
+  color:#fff;
+  font-size: xx-large;
+  font-weight: bold;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* .one img h {
+  width: 400px ;
+  font-size: 30px;
+} */
+
+  ul .nutriscore-vertical {  
+    list-style-type: none;
+    position: fixed;
+    z-index: 100;
+    top: 150px;
+    width: 100px;
+    /* right:7%; */
+}
+
+ul.list-products{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  justify-content: space-around;
+  /* flex:85%; */
+}
+
+#index div.bloc-products{
+  display: flex;
+  margin: 20px 0;
+}
+#index div.bloc-products ul.list-products{
+  flex: 0 0 80%;
+  max-width: 80%;
+}
+.btn-filter{
+  flex: 0 0 20%;
+  max-width: 20%;
+display: flex;
+justify-content: center; }
+/* ----------list products----------- */
+ul.list-products li{
+  flex: 0 0 30%;
+  max-width: 30%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5%;
+}
+
+ul.list-products li:hover{
+  border: 2px solid var(--blue);
+}
+ul.list-products li div{
+  text-align: center;
+}
+
+ul.list-products li div img{
+  max-width: 200px;  
+}
+
+ul.list-products li img.img-nutri-score
+{
+  max-width: 100px;
+}
+ul.list-products .product{
+  margin: 20px 0;
+}
+/* ----------nutriscore------------- */
+.nutri-score-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 300px;
+  
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+}
+
+.nutri-score-A,
+.nutri-score-B,
+.nutri-score-C,
+.nutri-score-D,
+.nutri-score-E {
+  color: #fff;
+}
+
+.nutri-score-A {
+  background-color: #5cb85c;
+  border-top-right-radius: 30%;
+  border-top-left-radius: 30%;
+}
+
+.nutri-score-B {
+  background-color: #8ac947;
+}
+
+.nutri-score-C {
+  background-color: #ffcc00;
+}
+
+.nutri-score-D {
+  background-color: #ff7f27;
+}
+
+.nutri-score-E {
+  background-color: #d9534f;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+}
+
+button:active,
+button:focus {
+  border-radius: 30%;
+  outline: 2px solid #fff;
+  font-size: xx-large;
+}
+
+.product i{
+  font-size: 2rem;
+  /* width: 100px; */
+  color: gray;
+  margin-left: 50px;
+}
+.product i:hover{
+  color: red;
+}
+/* =================== End page Index ================ */
+/* =================== page map ================ */
+  #map {
+    padding: 2%;
+    text-align: center;
+  }
+
+iframe {
+  object-fit: contain;
+  width: 100%;
+}
+
+/* =================== End page Map ================ */
+
+/* ================== style global =============== */
+:root {
+--blue: #57C6F2;
+--green: #56BF70;
+--beige: #f4ede7;
+--black: #0D0D0D;
+--orange: #E8D48F;
+--text-color: #333;
+--nutri-A:#5cb85c;
+--nutri-B:#8ac947;
+--nutri-C: #ffcc00;
+--nutri-D: #ff7f27;
+--nutri-E: #d9534f;
+--margin-pc: 20px;
+--margin-mobile: 10px;
+}
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: "Roboto", sans-serif;
+color: var(--text-color);
+background-color: var(--beige);
+}
+
+main{
+  max-width: 1024px;
+margin: 0 auto;
+}
+
+#detail{
+  background: #fff;
+  height: 100vh;
+}
+
+/* #body-fav{
+
+} */
+/* ==================End style global =============== */
+
+/* ------------ style header ------------- */
+#logo{
+  max-width: 120px;
+  height: auto;
+}
+header{
+  width: 100%;
+  background: var(--orange);
+
+}
+header div{
+  width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  height: 120px;
+}
+
+header h2, nav{
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+  color:#53b1c0;
+}
+
+header nav{
+margin-right: 20px;
+}
+
+header nav a{
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #F2E6D8;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+header nav a i{
+padding-right: 5px;
+}
+header nav a:hover{
+  background: var(--blue);
+}
+/* ----------- end style header -------------- */
+
+/* =================== page detail ================ */
+#detail article{
+margin: 20px;
+}
+
+#detail article div.product-detail .img-product{
+text-align: center;
+}
+
+#detail article div.product-detail{
+display: flex;
+flex-wrap: wrap;
+}
+
+#detail article div.product-detail div.name-product{
+margin-top: 50px;
+}
+
+.img-nutri-score{
+  max-height: 100%;
+  max-width: 200px;
+  margin-top: 20px;
+}
+#detail article div.product-detail div{
+flex: 0 0 50%;
+max-width: 50%;
+}
+
+#detail article h3{
+font-size: 1.5rem;
+padding: 15px 0;
+margin-left: 20px;
+}
+#detail article ul{
+
+padding: 10px 20px;
+}
+#detail article ul, p{
+margin-left: 20px;
+
+}
+/* Responsive */
+@media(max-width: 992px){
+#detail article div.product-detail div.img-product{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+#detail article div.product-detail div.name-product{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+ul.list-products li{
+  flex: 0 0 40%;
+  max-width: 40%;
+  padding: 20px;
+  border-radius: 5%;
+}
+
+#fav article {
+  display: flex;
+  flex-direction: wrap;
+}
+
+header h2{
+  display: none;
+}
+}
+/* =================== end page detail ================ */
+
+/* =================== Page favoris =================== */ 
+#fav article  {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 15px ;
+  background-color: white;
+  }
+
+#fav article div {
+  display: flex;
+  flex-direction: column; /* mettre en colonne*/
+  justify-content: center;
+}
+
+#fav article p {
+  font-size: xx-large;
+}
+
+#fav article img {
+  width : 300px; /* mettre toutes les images meme largeur*/
+}
+
+#fav article div img{
+  align-self: center;
+  /*margin: 0 0 0 70px ;*/ 
+}
+
+#fav article i {
+  font-size: xx-large;
+}
+
+#fav article {
+margin: 20px;
+background: white;
+padding: 30px;
+text-align: left;
+}
+
+
+/* =================== End Page favoris =================== */ 

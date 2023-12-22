@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <script
+    src="https://kit.fontawesome.com/d29c90abd7.js"
+    crossorigin="anonymous"
+></script>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <a href="http://localhost:5500"
+        ><img src="images/logo-asso.png" alt="Logo Assotiation Diet" id="logo"
+        /></a>
+        <h2>Association Diet</h2>
+        <nav>
+        <a href="http://localhost:5500/favoris.html" target="_blank"
+            ><i class="fa-solid fa-heart"></i>Mes favoris</a
+        >
+        </nav>
+    </header>
+    <main id="map">
+        <h1></h1>
+        
+        <iframe 
+        id="googleMaps"
+        width="600" 
+        height="450" 
+        style="border:0" 
+        loading="lazy" 
+        allowfullscreen
+        >
+        </iframe>
+
+        <!-- script here until js is introduced -->
+        <script src="config.js"></script>
+        <script>
+        const googleMapIframe = document.getElementById('googleMaps');
+        const apiKey = config.apiKey;
+        
+        const url = `https://www.google.com/maps/embed/v1/place?key=${apiKey}&q=undefined`;
+        
+        googleMapIframe.setAttribute('src', url);
+        </script>
+
+        <p><strong>Adresse: </strong> 6 All. des Sablons, 94120 Fontenay-sous-Bois</p>
+    </main>
+</body>
+</html>

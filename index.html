@@ -1,0 +1,52 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <title>Page d'accueil</title>
+        <script
+        src="https://kit.fontawesome.com/d29c90abd7.js"
+        crossorigin="anonymous"
+    ></script>
+        <script src="script/index.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <a href="http://localhost:5502"
+                ><img src="images/logo-asso.png" alt="Logo Assotiation Diet" id="logo"
+                /></a>
+                <h2>Association Diet</h2>
+                <nav>
+                <a href="http://localhost:5502/favoris.html" target="_blank"
+                    ><i class="fa-solid fa-heart"></i>Mes favoris</a
+                >
+                </nav>
+            </div>
+        </header> 
+        <main id="index">
+            <article>
+            <h1>Produits et leur Nutriscore</h1> 
+            <div class="bloc-products">
+                <ul class="list-products" id="target">
+                </ul>
+            
+                <div class="btn-filter">
+                <ul class="nutri-score-list">
+                    <li><button class="nutri-score-A">A</button></li>
+                    <li><button class="nutri-score-B">B</button></li>
+                    <li><button class="nutri-score-C">C</button></li>
+                    <li><button class="nutri-score-D">D</button></li>
+                    <li><button class="nutri-score-E">E</button></li>
+                </ul>
+                </div>
+            </div>
+        </article>
+        </main>
+
+    </body>
+
+    </html>
