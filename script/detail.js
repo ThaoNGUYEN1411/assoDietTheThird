@@ -14,7 +14,7 @@ async function fetchproduct() {
 	// productDetail.ecoscore_data.previous_data.agribalyse.name_fr;
 	// const productName = json.product.ecoscore_data.previous_data.agribalyse.name_fr;
 	const address = productDetail.manufacturing_places;
-	const nextPageUrl = `http://localhost:5502/detail.html?${address}`;
+	const nextPageUrl = `http://localhost:5502/map.html?${address}`;
 	const productName = productDetail.abbreviated_product_name;
 	const productImg = productDetail.image_front_url;
 	const nutriscore = productDetail.ecoscore_grade;
